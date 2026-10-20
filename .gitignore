@@ -1,0 +1,9 @@
+
+### `.gitignore`
+
+```gitignore
+target/
+*.db
+*.tmp
+.idea/
+.vscode/
