@@ -1,0 +1,7 @@
+import dev.example.db.DiskMap;
+import java.nio.file.Path;
+
+try (var map = new DiskMap<String, String>(Path.of("data", "users.db"))) {
+    map.put("user-1", "Ada");
+    System.out.println(map.get("user-1"));
+}
